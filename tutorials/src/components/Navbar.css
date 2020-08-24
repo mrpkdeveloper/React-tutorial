@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, sans-serif;
+}
+/************** navbar  **********/
+.navbar {
+  /* background-color: black; */
+  /* opacity: 0.75; */
+  z-index: 10;
+  /* border: solid 2px black; */
+  position: relative;
+  height: 10vh;
+  display: flex;
+  background-color: #08192b;
+}
+.navigation {
+  position: absolute;
+  right: 0;
+  display: flex;
+  font-family: "Bree Serif", serif;
+}
+.logo {
+  /* border: solid 1px white; */
+  display: flex;
+}
+.logoimg {
+  height: 100%;
+  /* border: solid 1px white; */
+}
+.logonamenavbar {
+  height: 100%;
+  /* border: solid 1px white; */
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.navigation li,
+.logo li {
+  list-style: none;
+  margin: 16px 23px;
+  z-index: 1;
+}
+.navigation li a,
+.logo li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 7px;
+}
+.navigation li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
