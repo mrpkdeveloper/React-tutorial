@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from "./App.js";
 
 var msg = "Good Morning";
 // let currtime = new Date().toLocaleTimeString();
+let currtimeexact = new Date().ge;
 let currtime = new Date().getHours();
 let timecss = {
   color: "black",
@@ -30,6 +32,7 @@ ReactDOM.render(
         hello User ,<span style={timecss}>{msg} </span>
       </h1>
     </div>
+    <App />
   </>,
   document.getElementById("root")
 );
