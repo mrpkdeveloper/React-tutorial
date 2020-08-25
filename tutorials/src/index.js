@@ -6,6 +6,7 @@ import "./index.css";
 import Heading from "./components/Heading";
 import Navbar from "./components/Navbar";
 import Productcard from "./components/Productcard";
+import App from "./App";
 
 // ReactDom.render('kya dikhana hain ' , 'kha dikhana hain','callback function')
 //this below h1 line is jsx not html
@@ -18,6 +19,7 @@ ReactDom.render(
   <>
     <Navbar />
     <Heading />
+    <App />
     {/* props concept */}
     <Productcard title="hello1" />
     <Productcard title="hello2" />
