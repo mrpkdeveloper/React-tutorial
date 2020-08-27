@@ -3,10 +3,9 @@ import React from "react"; //new ecmascript react is imported to use jsx
 // var ReactDom = require("react-dom"); oldjavascript
 import ReactDom from "react-dom"; //new ecmascript
 import "./index.css";
-import Heading from "./components/Heading";
-import Navbar from "./components/Navbar";
 import Productcard from "./components/Productcard";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 // ReactDom.render('kya dikhana hain ' , 'kha dikhana hain','callback function')
 //this below h1 line is jsx not html
@@ -17,9 +16,10 @@ const currenttime = new Date().toLocaleTimeString();
 
 ReactDom.render(
   <>
-    <Navbar />
-    <Heading />
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+
     {/* props concept */}
     <Productcard title="hello1" />
     <Productcard title="hello2" />
