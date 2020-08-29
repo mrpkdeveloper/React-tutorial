@@ -16,7 +16,7 @@ function Navbar() {
           <NavLink to="/aboutus">About Us</NavLink>
         </li>
         <li className="item">
-          <a href="#Themes">Themes</a>
+          <NavLink to="/productpage/">Productpage</NavLink>
         </li>
         <li className="item">
           <a href="#Our-Clients">Our Clients</a>
