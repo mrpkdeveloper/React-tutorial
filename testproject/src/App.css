@@ -120,7 +120,8 @@
 /******************************************* section  ***************************************/
 
 .section-whyblackhush,
-.section-Blacktee {
+.section-Blacktee,
+.section {
   /* border: solid 1px white; */
   position: relative;
   background-color: black;

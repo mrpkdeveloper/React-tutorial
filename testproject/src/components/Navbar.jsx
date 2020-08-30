@@ -1,28 +1,29 @@
 import React from "react";
-// import skull from "./assets/skull.png";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img className="logoimg item" src={require('../assets/skull.png')} alt="image" />
+        <img
+          className="logoimg item"
+          src={require("../assets/skull.png")}
+          alt="image"
+        />
         <h1 className="logonamenavbar">HashBlack</h1>
       </div>
       <ul className="navigation">
         <li className="item">
-          <a href="#" data-component="home">
-            Home
-          </a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className="item">
-          <a href="#">About Us</a>
+          <NavLink to="/aboutus">About US</NavLink>
         </li>
         <li className="item">
-          <a href="#" data-component="productpage">
-            Products
-          </a>
+          <NavLink to="/productpage">Products</NavLink>
         </li>
         <li className="item">
-          <a href="#Our-Clients">Our Clients</a>
+          <NavLink to="/ourclient">Our Client</NavLink>
         </li>
       </ul>
     </div>

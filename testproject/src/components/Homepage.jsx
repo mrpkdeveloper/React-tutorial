@@ -1,10 +1,12 @@
 import React from "react";
+// import { Link } from "react-router-dom";
+
 const Homepage = () => {
   return (
     <>
       <div class="home">
         <div class="home-content">
-          <h1 class="h-primary ">Everything Sucks</h1>
+          <h1 class="h-primary ">Comming Soon</h1>
           <p>Wait for our premium product category</p>
         </div>
       </div>
@@ -25,7 +27,9 @@ const Homepage = () => {
             <h2 class="heading-2">Only</h2>
             <h2 class="heading-3">98</h2>
             <h2 class="heading-2">Pieces left</h2>
-            <button class="contentbtn">Buy Now</button>
+            <button class="contentbtn">
+              <a href="/productpage">Buy Now</a>
+            </button>
           </div>
         </div>
       </div>

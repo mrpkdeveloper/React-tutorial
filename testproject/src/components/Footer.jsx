@@ -1,54 +1,60 @@
 import React from "react";
 // import skull from "./assets/skull.png";
+const Upperfootercard = (props) => {
+  return (
+    <>
+      <div class="box">
+        <img class="image-services" src={props.img} alt="image" />
+        <h2 class="h-secondary">{props.heading}</h2>
+        <p>{props.content}</p>
+      </div>
+    </>
+  );
+};
+
+const Footer_socialmedialogo = (props) => {
+  return (
+    <>
+      <img
+        class="image-services-medialogo"
+        // src={require("../assets/visa .png")}
+        src={props.img}
+        alt="image"
+      />
+    </>
+  );
+};
+
 const Footer = () => {
   return (
     <>
       <div class="footer-upper">
-        <div class="box">
-          <img
-            class="image-services"
-            src={require("../assets/planet.png")}
-            alt="image"
-          />
-          <h2 class="h-secondary">Pan India Shiping</h2>
-          <p>
-            We deliver to 12,000 pin codes in India with the help of our
-            delivery partner
-          </p>
-        </div>
-        <div class="box">
-          <img
-            class="image-services"
-            src={require("../assets/padlock.png")}
-            alt="image"
-          />
-          <h2 class="h-secondary">Secure Payments</h2>
-          <p>You can pay via Debit or Credit card</p>
-        </div>
-        <div class="box">
-          <img
-            class="image-services"
-            src={require("../assets/sale.png")}
-            alt="image"
-          />
-          <h2 class="h-secondary">Best offers</h2>
-          <p>
-            Keep an eye on our social media handles, we always have some sort of
-            discounts running
-          </p>
-        </div>
-        <div class="box">
-          <img
-            class="image-services"
-            src={require("../assets/medal.png")}
-            alt="image"
-          />
-          <h2 class="h-secondary">Best Quality</h2>
-          <p>
-            Every piece of garment is tried and tested before it is up for sale.
-            100% quality assured
-          </p>
-        </div>
+        <Upperfootercard
+          img={require("../assets/planet.png")}
+          heading={"Pan India Shiping"}
+          content={
+            "We deliver to 12,000 pin codes in India with the help of our delivery partner"
+          }
+        />
+        <Upperfootercard
+          img={require("../assets/padlock.png")}
+          heading={"Secure Payments"}
+          content={"You can pay via Debit or Credit card"}
+        />
+        <Upperfootercard
+          img={require("../assets/sale.png")}
+          heading={"Best Offers"}
+          content={
+            "Keep an eye on our social media handles, we always have some sort of discounts running"
+          }
+        />
+        <Upperfootercard
+          img={require("../assets/medal.png")}
+          heading={"Premium Quality"}
+          content={
+            "Every piece of garment is tried and tested before it is up for sale 100% quality assured"
+          }
+        />
       </div>
 
       <div class="footerlogo">
@@ -68,28 +74,12 @@ const Footer = () => {
       <div class=" footer">
         <div class="footerbox-main">
           <div class="socialmedialogo">
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/visa .png")}
-              alt="image"
-            />
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/paypal.png")}
-              alt="image"
-            />
+            <Footer_socialmedialogo img={require("../assets/visa .png")} />
+            <Footer_socialmedialogo img={require("../assets/paypal.png")} />
           </div>
           <div class="socialmedialogo">
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/mastercard.png")}
-              alt="image"
-            />
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/paytm.png")}
-              alt="image"
-            />
+            <Footer_socialmedialogo img={require("../assets/mastercard.png")} />
+            <Footer_socialmedialogo img={require("../assets/paytm.png")} />
           </div>
         </div>
         <div class="footerbox">
@@ -122,28 +112,12 @@ const Footer = () => {
 
         <div class="footerbox-main">
           <div class="socialmedialogo">
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/facebook.png")}
-              alt="image"
-            />
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/youtube.png")}
-              alt="image"
-            />
+            <Footer_socialmedialogo img={require("../assets/facebook.png")} />
+            <Footer_socialmedialogo img={require("../assets/youtube.png")} />
           </div>
           <div class="socialmedialogo">
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/instagram.png")}
-              alt="image"
-            />
-            <img
-              class="image-services-medialogo"
-              src={require("../assets/twitter.png")}
-              alt="image"
-            />
+            <Footer_socialmedialogo img={require("../assets/instagram.png")} />
+            <Footer_socialmedialogo img={require("../assets/twitter.png")} />
           </div>
         </div>
       </div>
