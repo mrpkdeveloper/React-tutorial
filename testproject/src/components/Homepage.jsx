@@ -28,7 +28,7 @@ const Homepage = () => {
             <h2 class="heading-3">98</h2>
             <h2 class="heading-2">Pieces left</h2>
             <button class="contentbtn">
-              <a href="/productpage">Buy Now</a>
+              <a href="/collections/productpage/product-0">Buy Now</a>
             </button>
           </div>
         </div>

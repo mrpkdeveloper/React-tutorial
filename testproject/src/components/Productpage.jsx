@@ -1,7 +1,9 @@
 import React from "react";
 import "./Productpage.css";
+import { useParams } from "react-router-dom";
 
 const Productpage = () => {
+  const { productname } = useParams();
   return (
     <>
       {/* <!------------------------------- product section --------------------------> */}
@@ -35,7 +37,7 @@ const Productpage = () => {
         <div class="productdescriptiondiv">
           <div class="product-details">
             <header>
-              <h1 class="title">Alien Black Fossil</h1>
+              <h1 class="title">{productname}</h1>
               <span class="colorCat">Premium</span>
               <div class="price">
                 <span class="before">₹599</span>
